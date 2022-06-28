@@ -1,0 +1,22 @@
+<p>show works!</p>
+<a routerLink="/create">Create</a>
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>description</th>
+      <th>link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let page of Pages">
+      <td>{{ page.name }}</td>
+      <td>{{ page.description }}</td>
+      <td>{{ page.link }}</td>
+      <td>
+        <button routerLink="/edit/{{page.id}}">Edit</button>
+        <button (click)="deleteRow(page)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
