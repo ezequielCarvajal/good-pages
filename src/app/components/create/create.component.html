@@ -1,8 +1,7 @@
-<p>create works!</p>
 
 <form [formGroup]="pageForm" (ngSubmit)="onSubmit()" novalidate>
   <div>
-    <label for="name">Name</label>
+    <label for="name">Language</label>
     <input type="text" formControlName="name" required>
   </div>
   <div>
@@ -15,4 +14,4 @@
   </div>
   <button [disabled]="!pageForm.valid" type="submit" >Enviar</button>
 </form>
-<a routerLink="">Regresar</a>
+<a class="come-back" routerLink="">Regresar</a>

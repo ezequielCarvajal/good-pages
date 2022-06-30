@@ -1,22 +1,23 @@
-<p>show works!</p>
-<a routerLink="/create">Create</a>
 <table>
   <thead>
     <tr>
-      <th>name</th>
-      <th>description</th>
-      <th>link</th>
+      <th>Language</th>
+      <th>Description</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let page of Pages">
       <td>{{ page.name }}</td>
       <td>{{ page.description }}</td>
-      <td>{{ page.link }}</td>
+      <td> <a href="{{page.link}}">{{ page.link }}</a><td>
       <td>
-        <button routerLink="/edit/{{page.id}}">Edit</button>
-        <button (click)="deleteRow(page)">Delete</button>
+        <button routerLink="/edit/{{page.id}}"><img src="../../../assets/edit.png"></button>
+        <button (click)="deleteRow(page)"><img src="../../../assets/delete.png" ></button>
       </td>
     </tr>
   </tbody>
 </table>
+<div class="create-container">
+  <a  class="create" routerLink="/create"><img src="../../../assets/add.png"></a>
+</div>

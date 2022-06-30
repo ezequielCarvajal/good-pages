@@ -1,0 +1,18 @@
+
+table {
+  width: 80%;
+  margin: 0 auto;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.create-container{
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+

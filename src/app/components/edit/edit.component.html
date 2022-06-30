@@ -2,7 +2,7 @@
 
 <form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
   <div>
-    <label for="name">Name</label>
+    <label for="name">Language</label>
     <input type="text" formControlName="name" required>
   </div>
   <div>
@@ -15,4 +15,4 @@
   </div>
   <button  type="submit" >Editar</button>
 </form>
-<a routerLink="">Regresar</a>
+<a class="come-back"routerLink="">Regresar</a>

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+.come-back {
+  display: block;
+  text-align: center;
+}
