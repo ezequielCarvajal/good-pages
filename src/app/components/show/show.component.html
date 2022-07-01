@@ -10,7 +10,7 @@
     <tr *ngFor="let page of Pages">
       <td>{{ page.name }}</td>
       <td>{{ page.description }}</td>
-      <td> <a href="{{page.link}}">{{ page.link }}</a><td>
+      <td> <a href="{{page.link}}" target="_blank">{{ page.link }}</a><td>
       <td>
         <button routerLink="/edit/{{page.id}}"><img src="../../../assets/edit.png"></button>
         <button (click)="deleteRow(page)"><img src="../../../assets/delete.png" ></button>
